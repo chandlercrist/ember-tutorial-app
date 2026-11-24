@@ -43,6 +43,6 @@ module.exports = function (environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
-
+  ENV.TOMTOM_ACCESS_TOKEN = process.env.TOMTOM_ACCESS_TOKEN || '';
   return ENV;
 };
